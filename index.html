@@ -207,6 +207,12 @@
             // 防止多次重复绑定
             container.data('isBindScroll', true);
     };
+    var flag = true;
+    var target = document.querySelector('.vue_user');
+    $('.bottom').click(function(){
+        $.smartScroll(target,flag);
+        flag = !flag;
+    });
 
     </script>
   </body>

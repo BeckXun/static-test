@@ -72,11 +72,11 @@
         background: antiquewhite;
         height: 16rem;
     }
-    #classList {
+    /*#classList {
         position: fixed;
         left: 0;
         top: 0;
-    }
+    }*/
   </style>
   <link href="user.css" rel=stylesheet />
   <body>
@@ -118,6 +118,10 @@
       <div class="line2"></div>
     </div> -->
     <script>
+        $('body')[0].addEventListener('touchmove',function(e){
+            console.log(e.changedTouches[0])
+            $('.myClass').html(e.changedTouches[0].screenX)
+        })
         $.smartScroll = function(container, selectorScrollable) {
             // 如果没有滚动容器选择器，或者已经绑定了滚动时间，忽略
             if (!selectorScrollable || container.data('isBindScroll')) {

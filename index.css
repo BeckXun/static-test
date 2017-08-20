@@ -1,0 +1,127 @@
+/* reset */
+html, body, h1, h2, h3, h4, h5, p,nav,menu, figure, figcaption, ul, ol, li{margin:0;padding:0; font-size: 16px; font-weight: 400}
+body,select,textarea,input{ font:16px/1.5 "Microsoft YaHei",Arial; }
+body,a{color: #fff;}
+ol, ul{list-style: none}
+var, em, i{ font-style:normal;}
+a {-webkit-tap-highlight-color: transparent;}
+a img{ border:0 none;}
+a:link,a:visited{text-decoration: none}
+img { max-width: 100%; vertical-align: top; }
+select,textarea,input[type="submit"],input[type="button"]{-webkit-appearance: none;-webkit-border-image: none; border-image: none; -webkit-border-radius: 0; border-radius: 0; border:0 none;}
+input {border: 0; outline: 0;}
+.clearfix:after {content:"."; display: block; visibility: hidden; clear: both; height:0; font-size:0}
+.clearfix {*zoom:1}
+/* index */
+img,a {
+	display: block;
+}
+body {
+	background: black;
+}
+.logo {
+	width: 100%;
+}
+.background {
+	position: relative;
+}
+.background .bg {
+	width: 100%;
+}
+.background .operation {
+	position: absolute;
+	width: 3rem;
+	top: 2rem;
+}
+.background .operation img {
+	width: 80%;
+	margin: 0 auto .4rem;
+}
+.background .operation a {
+	color: #f2f2f2;
+	border: 1px solid #eee;
+	text-align: center;
+	font-size: .2rem;
+	height: .44rem;
+	line-height: .44rem;
+	margin-top: .02rem;
+}
+.background .operation a:active {
+	border: 1px solid #ed1c24;
+	background: #f2f2f2;
+	color: #333;
+}
+.scroller-container .mark {
+	height: .75rem;
+	background: black;
+	position: relative;
+	margin-bottom: 1.98rem;
+}
+.scroller-container .mark span {
+	width: .29rem;
+	height: 100%;
+	background:#ed1c24;
+	position: absolute;
+	left: .45rem;
+	top: 0;
+}
+.scroller-container .float-wraper {
+	padding: 0 .9rem;
+}
+.scroller-container .float-wraper img {
+	float: left;
+	width: 8.2rem;
+	margin-bottom: 2.4rem;
+}
+.scroller-container .float-wraper .chinese {
+	float: left;
+	width: 4rem;
+	margin: 0 .35rem 0 .44rem;
+}
+.chinese .title {
+	font-size: .28rem;
+	text-align: center;
+	line-height: 1.1em;
+	margin-bottom: .4rem;
+}
+.chinese p {
+	font-size: .24rem;
+	line-height: 1.4em;
+}
+.scroller-container .float-wraper .english {
+	float: left;
+	width: 4.2rem;
+	font-size: .24rem;
+	word-break: keep-all;
+}
+/* 联系我们 */
+#contact .content-wraper {
+	width: 14.76rem;
+	margin: 1.97rem auto 2.21rem;
+}
+#contact .content-wraper .content {
+	float: left;
+	width: 6.95rem;
+}
+#contact .content-wraper .content .logo {
+	width: .98rem;
+	margin: 1.68rem auto .35rem;
+}
+#contact .content-wraper .content p {
+	text-align: center;
+	line-height: .36rem;
+	font-size: .24rem;
+}
+#contact .content-wraper .qrcode {
+	float: right;
+	width: 6.29rem;
+}
+/* 产品 */
+#product .container {
+	margin: 0 auto 2rem;
+	min-height: 4rem;
+}
+/* 新闻 */
+#news .container {
+	margin: 0 auto 2rem;
+}

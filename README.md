@@ -1,2 +1,1 @@
-# flexBox
-解决flexBox兼容性问题
+# 测试静态页专用

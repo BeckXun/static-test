@@ -1,334 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui"> -->
-    <title>测试</title>
-    <!-- <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script> -->
-  </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    html {
-      font-size: 30px;
-    }
-    body,html {
-      width: 100%;
-      height: 100%;
+	<head lang="zh">
+		<title>北京铁甲钢拳科技有限公司</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="外骨骼,机器臂,机器外骨骼,铁甲钢拳"/>
+		<meta name="description" content="北京铁甲钢拳科技有限公司" />
+		<meta name="author" content="JamesXun">
+		<link href="./index.css" rel="stylesheet">
+		<script>
+			// rem布局
+			window.onresize = function(){
+				var rem = document.documentElement.clientWidth/1920*100;
+				document.documentElement.style.fontSize = rem+'px';
+			}
+			window.onresize();
+		</script>
+	</head>
+	<body>
+		<img src="./imgs/header.jpg" alt="logo" class="header">
+		<div class="background">
+			<img src="./imgs/bgImg.png" alt="背景图片" class="bg">
+			<div class="operation">
+				<img src="./imgs/logo.png" alt="" class="logo">
+				<a href="#description">公司简介</a>
+				<a href="#product">研发产品</a>
+				<a href="#news">最新资讯</a>
+				<a href="#contact">联系我们</a>
+			</div>
+		</div>
+		<div class="scroller-container">
+			<div id="description">
+				<div class="mark">
+					<span></span>
+				</div>
+				<div class="float-wraper clearfix">
+					<img src="./imgs/description.png" alt="铁甲钢拳">
+					<div class="chinese">
+						<div class="title">北京铁甲钢拳科技有限公司</div>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;北京铁甲钢拳科技有限公司是一家以科技研发为推动力的公司。主营业务为柔性机械外骨骼系统。公司为了应对世界未来需求变革，并推动人类自我进化而成立。</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;外骨骼是一种穿戴型机器人，可以通过各种动力原件和传感器极大地增加人体各项机能。比如一个人举起一辆汽车，奔跑速度80迈等。亦可与机器和人工智能结合，获得人本身不拥有的特性，感官，以及功能。最终可能变成侵入式设备，机器和人的完全融合最终实现人类的赛博格式进化。</p>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;铁甲钢拳科技最初是一个科研组织由学院派的教授研究员，和制造业500强的工程师组成。后转为商业组织成立公司。研发5年，初心未改。</p>
+					</div>
+					<div class="english">CEXO is a Chinese pioneer in the field of soft robotic exoskeletons.  The company was founded for reasons that drive the human selfevolution and satisfy the future needs of the world.
+Exoskeletons?are?wearable?devices that can greatly promote the human power through various actuators. The human can raise a car, run at speed of 80 km/h with the help of robots. Today, robotics is combining?sensors and artificial intelligence to provide human unnatural feeling, sense, and ability. Exoskeletons could be an invasive device in the future and eventually achieve the integration between human and robots.</div>
+				</div>
+			</div>
+			<div id="product">
+				<div class="mark">
+					<span></span>
+				</div>
+				<div class="container">
 
-    }
-    /*img {
-      display: block;
-      width: 100%;
-      height: 100%;
-    }*/
-    /*.flexBox {
-        flex-wrap: wrap;
-        display: flex;
-        height: 100%;
-        width: 100%;
-    }
-    .item {
-        flex: 0 0 50%;
-        font-size: 60px;
-        text-align: center;
-        line-height: 100%;
-        position: relative;
-        border-top: 0.5px solid #d8d8d8;
-        height: 400px;
-        line-height: 400px;
-    }
-    .item:nth-child(odd)::before {
-        content: '';
-        width: 0.5px;
-        height: 100%;
-        background: #d8d8d8;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .box {
-      height: 200px;
-    }
-    .box .line {
-      margin: 50px auto 0;
-      width: 100%;
-      height: 1px;
-      background: #d8d8d8;
-    }
-    .box .line2 {
-      margin: 50px auto 0;
-      width: 100%;
-      height: 0.5px;
-      background: #d8d8d8;
-    }
-    .noscroll,
-    .noscroll body {
-        overflow: hidden;
-    }
-    .noscroll body {
-        position: relative;
-    }
-    .bottom {
-        margin-top: 0.2rem;
-        background: antiquewhite;
-        height: 16rem;
-    }*/
-    /*#classList {
-        position: fixed;
-        left: 0;
-        top: 0;
-    }*/
-    /*#category-head{
-      width:100%;
-      height: 50%;
-      white-space: nowrap;
-      overflow-x:scroll;
-      float:left;
-      overflow-y:hidden;
-      -webkit-overflow-scrolling: touch;
-      overflow-scrolling: touch;
-    }
-    #category-head li{
-      display:inline-block;
-      width: 25%;
-      height: 100%;
-      line-height: 100%;
-      padding-left:10px;
-    }
-    div {
-      height: 20%;
-      font-size: 60px;
-      border-top: 1px solid black;
-    }*/
-    /*textarea {
-      font-size: 20px;
-      padding-left: 20px;
-      line-height: 30px;
-      color: #333;
-      width: 100%;
-      height: 60%;
-      border: 0;
-      outline: none;
-    }
-    .placeholder {
-        color: #999999;
-    }*/
-    /*div {
-      width: 80%;
-      height: 44px;
-      background: brown;
-      margin: 0 auto;
-      text-align: center;
-      color: #fff;
-      line-height: 44px;
-      font-size: 20px;
-    }*/
-    input {
-        height: 200px;
-        width: 100%;
-        border: 0;
-        outline: 0;
-    }
-    .btn {
-        width: 100%;
-        line-height: 44px;
-        font-size: 16px;
-        text-align: center;
-        background: grey;
-        color: #fff;
-        position: absolute;
+				</div>
+			</div>
+			<div id="news">
+				<div class="mark">
+					<span></span>
+				</div>
 
-        bottom: 20px;
-    }
-  </style>
-  <!-- <link href="user.css" rel=stylesheet /> -->
-  <body>
-    <input type="text" name="" value="">
-    <div class="btn">峰哥贼帅</div>
-    <!-- <img src="3days.png" alt="">
-    <img src="4days.png" alt="">
-    <img src="7days.png" alt=""> -->
-    <!-- <textarea></textarea>
-    <div>发表</div> -->
-    <!-- <script type="text/javascript">
-      window.onload = function() {
-          var text = document.querySelector('textarea');
-          text.onkeydown = function (e) {
-            text.value = e.code;
-          }
-      }
-    </script> -->
-    <!-- <ul class="flex-layout category-head" id="category-head" style="">
-         <li class="flex" style="" id="brand_cat" searchtype="brand">品牌团</li>
-         <li class="flex" style="" data-ic="1" searchtype="goods">美体个护</li>
-         <li class="flex hover" style="" data-ic="4" searchtype="goods">食品保健</li>
-         <li class="flex" style="" data-ic="7" searchtype="goods">婴幼儿</li>
-         <li class="flex" style="" data-ic="10" searchtype="goods">百货</li>
-         <li class="flex" style="" data-ic="13" searchtype="goods">数码</li>
-         <li class="flex" style="" id="brand_cat" searchtype="brand">品牌团</li>
-         <li class="flex" style="" data-ic="1" searchtype="goods">美体个护</li>
-         <li class="flex hover" style="" data-ic="4" searchtype="goods">食品保健</li>
-         <li class="flex" style="" data-ic="7" searchtype="goods">婴幼儿</li>
-         <li class="flex" style="" data-ic="10" searchtype="goods">百货</li>
-         <li class="flex" style="" data-ic="13" searchtype="goods">数码</li>
-    </ul>
-
-    <div style="clear:both">师傅</div>
-    <div>师傅</div>
-    <div>师傅</div>
-    <div>师傅</div>
-    <div>师傅</div>
-    <div>师傅</div>
-    <div>师傅</div>
-    <div>师傅</div>
-    <div>师傅</div> -->
-    <!-- <div class="vue_user">
-      <div class="userHeader">
-
-      </div>
-
-      <div class="myClass">我的课程</div>
-
-      <div class="classList" id="classList" style="width: 200rem">
-          <div class="cont"></div>
-          <div class="cont"></div>
-          <div class="cont"></div>
-          <div class="cont"></div>
-          <div class="cont"></div>
-          <div class="cont"></div>
-          <div class="cont"></div>
-          <div class="cont"></div>
-          <div class="cont"></div>
-          <div class="cont"></div>
-      </div>
-    </div> -->
-    <!-- <div class="bottom"></div> -->
-    <!-- <div class="flexBox">
-      <div class="item">1</div>
-      <div class="item">2</div>
-      <div class="item">3</div>
-      <div class="item">4</div>
-      <div class="item">5</div>
-      <div class="item">6</div>
-      <div class="item">7</div>
-      <div class="item">8</div>
-    </div>
-    <div class="box">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line2"></div>
-      <div class="line2"></div>
-    </div> -->
-    <!-- <script>
-        $('body')[0].addEventListener('touchmove',function(e){
-            console.log(e.changedTouches[0])
-            $('.myClass').html(e.changedTouches[0].screenX)
-        })
-        $.smartScroll = function(container, selectorScrollable) {
-            // 如果没有滚动容器选择器，或者已经绑定了滚动时间，忽略
-            if (!selectorScrollable || container.data('isBindScroll')) {
-                return;
-            }
-
-            // 是否是搓浏览器
-            // 自己在这里添加判断和筛选
-            var isSBBrowser;
-
-            var data = {
-                posY: 0,
-                maxscroll: 0
-            };
-
-            // 事件处理
-            container.on({
-                touchstart: function (event) {
-                    var events = event.touches[0] || event;
-
-                    // 先求得是不是滚动元素或者滚动元素的子元素
-                    var elTarget = $(event.target);
-
-                    if (!elTarget.length) {
-                        return;
-                    }
-
-                    var elScroll;
-
-                    // 获取标记的滚动元素，自身或子元素皆可
-                    if (elTarget.is(selectorScrollable)) {
-                        elScroll = elTarget;
-                    } else if ((elScroll = elTarget.parents(selectorScrollable)).length == 0) {
-                        elScroll = null;
-                    }
-
-                    if (!elScroll) {
-                        return;
-                    }
-
-                    // 当前滚动元素标记
-                    data.elScroll = elScroll;
-
-                    // 垂直位置标记
-                    data.posY = events.pageY;
-                    data.scrollY = elScroll.scrollTop();
-                    // 是否可以滚动
-                    data.maxscroll = elScroll[0].scrollHeight - elScroll[0].clientHeight;
-                },
-                touchmove: function () {
-                    // 如果不足于滚动，则禁止触发整个窗体元素的滚动
-                    if (data.maxscroll <= 0 || isSBBrowser) {
-                        // 禁止滚动
-                        event.preventDefault();
-                    }
-                    // 滚动元素
-                    var elScroll = data.elScroll;
-                    // 当前的滚动高度
-                    var scrollTop = elScroll.scrollTop();
-
-                    // 现在移动的垂直位置，用来判断是往上移动还是往下
-                    var events = event.touches[0] || event;
-                    // 移动距离
-                    var distanceY = events.pageY - data.posY;
-
-                    if (isSBBrowser) {
-                        elScroll.scrollTop(data.scrollY - distanceY);
-                        elScroll.trigger('scroll');
-                        return;
-                    }
-
-                    // 上下边缘检测
-                    if (distanceY > 0 && scrollTop == 0) {
-                        // 往上滑，并且到头
-                        // 禁止滚动的默认行为
-                        event.preventDefault();
-                        return;
-                    }
-
-                    // 下边缘检测
-                    if (distanceY < 0 && (scrollTop + 1 >= data.maxscroll)) {
-                        // 往下滑，并且到头
-                        // 禁止滚动的默认行为
-                        event.preventDefault();
-                        return;
-                    }
-                },
-                touchend: function () {
-                    data.maxscroll = 0;
-                }
-            });
-
-            // 防止多次重复绑定
-            container.data('isBindScroll', true);
-    };
-    var flag = false;
-    var target = document.querySelector('.vue_user');
-    $('.bottom').click(function(){
-        $.smartScroll(target,flag);
-    }); -->
-<!--
-    </script> -->
-  </body>
+				<div class="container">
+					<img src="./imgs/4.png" alt="最新资讯">
+				</div>
+			</div>
+			<div id="contact">
+				<div class="mark">
+					<span></span>
+				</div>
+				<div class="content-wraper clearfix">
+					<div class="content">
+						<img src="./imgs/logo2.png" alt="logo" class="logo">
+						<p>TEL: 010-5625755</p>
+						<p>E-mail: bjtjgq@163.com</p>
+					</div>
+					<img src="./imgs/qrcode.png" alt="二维码" class="qrcode">
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

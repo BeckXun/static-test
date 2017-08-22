@@ -22,56 +22,23 @@ body {
 .logo {
 	width: 100%;
 }
-.background {
-	position: relative;
-}
-.background .bg {
-	width: 100%;
-}
-.background .operation {
-	position: absolute;
-	width: 3rem;
-	top: 2rem;
-}
-.background .operation img {
-	width: 80%;
-	margin: 0 auto .4rem;
-}
-.background .operation a {
-	color: #f2f2f2;
-	border: 1px solid #eee;
-	text-align: center;
-	font-size: .2rem;
-	height: .44rem;
-	line-height: .44rem;
-	margin-top: .02rem;
-}
-.background .operation a:active {
-	border: 1px solid #ed1c24;
-	background: #f2f2f2;
-	color: #333;
-}
+
 .scroller-container .mark {
-	height: .75rem;
-	background: black;
-	position: relative;
-	margin-bottom: 1.98rem;
+	overflow: hidden;
 }
-.scroller-container .mark span {
-	width: .29rem;
-	height: 100%;
-	background:#ed1c24;
-	position: absolute;
-	left: .45rem;
-	top: 0;
+.scroller-container .mark img {
+	width: 4.98rem;
+	margin-top: .28rem;
+	margin-left: .65rem;
 }
 .scroller-container .float-wraper {
-	padding: 0 .9rem;
+	padding: 1.18rem .58rem 0;
 }
 .scroller-container .float-wraper img {
 	float: left;
-	width: 8.2rem;
-	margin-bottom: 2.4rem;
+	width: 9.15rem;
+	margin-bottom: 3.13rem;
+	margin-top: .37rem;
 }
 .scroller-container .float-wraper .chinese {
 	float: left;
@@ -82,7 +49,7 @@ body {
 	font-size: .28rem;
 	text-align: center;
 	line-height: 1.1em;
-	margin-bottom: .4rem;
+	margin-bottom: .2rem;
 }
 .chinese p {
 	font-size: .24rem;
@@ -90,32 +57,47 @@ body {
 }
 .scroller-container .float-wraper .english {
 	float: left;
-	width: 4.2rem;
+	width: 3.9rem;
 	font-size: .24rem;
 	word-break: keep-all;
 }
+#header .mark img {
+	margin-top: 1.19rem;
+}
+#header >img {
+	width: 12.77rem;
+	margin: 1.6rem auto 3.76rem;
+}
 /* 联系我们 */
+#contact {
+	background: url(./imgs/bgImg.png) center;
+	background-size: 100% 100%;
+	padding-bottom: 3.79rem;
+}
+#contact .mark img {
+	margin-top: .46rem;
+}
 #contact .content-wraper {
-	width: 14.76rem;
-	margin: 1.97rem auto 2.21rem;
+	margin: 2.65rem 3rem 0;
 }
 #contact .content-wraper .content {
 	float: left;
-	width: 6.95rem;
+	width: 6.16rem;
 }
 #contact .content-wraper .content .logo {
-	width: .98rem;
-	margin: 1.68rem auto .35rem;
+	width: 1.62rem;
+	margin: .82rem auto .35rem;
 }
 #contact .content-wraper .content p {
 	text-align: center;
-	line-height: .36rem;
-	font-size: .24rem;
+	line-height: .8rem;
+	font-size: .4rem;
 }
 #contact .content-wraper .qrcode {
 	float: right;
-	width: 6.29rem;
+	width: 4.75rem;
 }
+
 /* 产品 */
 #product .container {
 	margin: 0 auto 2rem;

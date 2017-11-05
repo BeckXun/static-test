@@ -204,6 +204,27 @@ a {
   margin-bottom: .4rem;
 }
 
+.common-section {
+  text-align: center;
+  position: relative;
+}
+
+.common-section h3 {
+  position: absolute;
+  top: .95rem;
+  width: 100%;
+  font-size: .4rem;
+  line-height: .56rem;
+}
+
+.common-section p {
+  position: absolute;
+  top: 1.69rem;
+  width: 100%;
+  font-size: .2rem;
+  line-height: .28rem;
+}
+
 .page-home .section1 {
   position: relative;
 }
@@ -276,29 +297,6 @@ a {
 .page-home .img-right-layout .cont .title,
 .page-home .img-right-layout .cont .text {
   text-align: right;
-}
-
-.page-home .section3 {
-  text-align: center;
-}
-
-.page-home .section3 img {
-  display: block;
-  width: 100%;
-}
-
-.page-home .section3 h3 {
-  width: 11rem;
-  margin: .95rem auto .18rem;
-  font-size: .4rem;
-  line-height: .56rem;
-}
-
-.page-home .section3 p {
-  width: 11rem;
-  font-size: .2rem;
-  line-height: .28rem;
-  margin: 0 auto;
 }
 
 .page-contact {
@@ -545,10 +543,10 @@ a {
 }
 
 .page-technology .photos > div span {
-  font-size: .2rem;
-  line-height: .3rem;
+  font-size: .36rem;
+  line-height: .43rem;
   color: #fff;
-  max-width: 50%;
+  text-align: center;
 }
 
 .page-technology .photos .mask1 {
@@ -652,6 +650,7 @@ a {
   float: left;
   border-radius: .08rem;
   box-shadow: 0 0 0.07rem #999;
+  width: 3.88rem;
 }
 
 .page-product .main .parts li:last-child {
@@ -660,6 +659,7 @@ a {
 
 .page-product .main .parts li img {
   display: block;
+  width: 100%;
   border-top-left-radius: 0.08rem;
   border-top-right-radius: 0.08rem;
 }
@@ -690,4 +690,16 @@ a {
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.page-factory .swiper-pagination {
+  bottom: 60px;
+}
+
+.page-factory .swiper-button-prev {
+  left: 80px;
+}
+
+.page-factory .swiper-button-next {
+  right: 80px;
 }

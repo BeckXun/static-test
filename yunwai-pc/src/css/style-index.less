@@ -145,11 +145,19 @@
 	background: url(../img/contact/bg.jpg) center;
 	background-size: 100% 100%;
 	.main {
-		margin: 1rem auto 0;
+		margin-top: .3rem;
 		width: 12rem;
 		background: #FFFFFF;
 		border-radius: .08rem;
 		padding: .8rem 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-ms-transform: translate(-50%,-50%); 	/* IE 9 */
+		-moz-transform: translate(-50%,-50%); 	/* Firefox */
+		-webkit-transform: translate(-50%,-50%); /* Safari 和 Chrome */
+		-o-transform: translate(-50%,-50%); 	/* Opera */
+		transform: translate(-50%,-50%);
 		&>img {
 			display: block;
 			margin: 0 auto;

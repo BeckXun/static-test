@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" Content="电动车">
+    <meta name="author" Content="JamesXun">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>EcoGo</title>
+    <script>
+        // autoJump computeRem
+        (function () {
+            var isMobie = navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i);
+            if (isMobie) window.location.href = 'www.baidu.com';
+            var deviceWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = deviceWidth / 19.2 + 'px';
+        }());
+    </script>
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-index.css"/>
+<!--<link rel="stylesheet" href="http://wximg.gtimg.com/tmt/workflow-next/css/style-index.css"/>-->
+</head>
+
+<body>
+	<div class="page-contact" id="app">
+        <script>var currentPage = 7</script>
+    	<div class="nav">
+    <div class="clearfix" id="nav-container">
+        <a class="logo" href="index.html"><img src="../../img/home/logo.png" alt=""></a>
+        <a class="page" href="index.html">HOME<i></i></a>
+        <a class="page" href="about.html">About Yunwai<i></i></a>
+        <a class="page" href="c02.html">C02<i></i></a>
+        <a class="page" href="c03.html">C03<i></i></a>
+        <a class="page" href="factory.html">Factory<i></i></a>
+        <a class="page" href="technology.html">Technology<i></i></a>
+        <a class="page" href="contact.html">Contact Us<i></i></a>
+    </div>
+</div>
+<script>
+    var aList = document.getElementById('nav-container').getElementsByTagName('a')
+    aList[currentPage].className += ' active'
+</script>
+
+        <div class="main">
+            <img src="../img/contact/logo-red.png" alt="">
+            <p>Beijing Yunwai Automobile Technology Co., Ltd.</p>
+            <h4>Contact Us</h4>
+            <ul class="list clearfix">
+                <li>
+                    <img src="../img/contact/icon1.png" alt="">
+                    <h5>Tel</h5>
+                    <p>010-57196808</p>
+                </li>
+                <li>
+                    <img src="../img/contact/icon2.png" alt="">
+                    <h5>Email:</h5>
+                    <p>dxh@yunwai.tech</p>
+                </li>
+                <li>
+                    <img src="../img/contact/icon3.png" alt="">
+                    <h5>Web:</h5>
+                    <p>http://www.yunwai.tech</p>
+                </li>
+                <li>
+                    <img src="../img/contact/icon4.png" alt="">
+                    <h5>Add:</h5>
+                    <p>30117, Floor 1, Galaxy SOHO, Dongcheng District, Beijing, China</p>
+                </li>
+            </ul>
+        </div>
+	</div>
+
+</body>
+</html>

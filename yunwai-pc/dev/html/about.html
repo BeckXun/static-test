@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" Content="电动车">
+    <meta name="author" Content="JamesXun">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>EcoGo</title>
+    <script>
+        // autoJump computeRem
+        (function () {
+            var isMobie = navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i);
+            if (isMobie) window.location.href = 'www.baidu.com';
+            var deviceWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = deviceWidth / 19.2 + 'px';
+        }());
+    </script>
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-index.css"/>
+<!--<link rel="stylesheet" href="http://wximg.gtimg.com/tmt/workflow-next/css/style-index.css"/>-->
+</head>
+
+<body>
+	<div class="page-about" id="app">
+        <script>var currentPage = 2</script>
+    	<div class="nav">
+    <div class="clearfix" id="nav-container">
+        <a class="logo" href="index.html"><img src="../../img/home/logo.png" alt=""></a>
+        <a class="page" href="index.html">HOME<i></i></a>
+        <a class="page" href="about.html">About Yunwai<i></i></a>
+        <a class="page" href="c02.html">C02<i></i></a>
+        <a class="page" href="c03.html">C03<i></i></a>
+        <a class="page" href="factory.html">Factory<i></i></a>
+        <a class="page" href="technology.html">Technology<i></i></a>
+        <a class="page" href="contact.html">Contact Us<i></i></a>
+    </div>
+</div>
+<script>
+    var aList = document.getElementById('nav-container').getElementsByTagName('a')
+    aList[currentPage].className += ' active'
+</script>
+
+
+        <div class="title">
+            <img src="../img/about/logo.png" alt="logo">
+            Beijing Yunwai Automobile Technology Co., Ltd.
+        </div>
+        <div class="article">
+            <p>Beijing Yunwai Automobile Technology Co., Ltd. is a specialized high-tech enterprise that develops, manufactures and sells micro-electric vehicle. The company also provides technical and after-sales service, and has a professional marketing team with strong resources in domestic and international markets.</p>
+            <p>Yunwai is the National High Technology Enterprise in China with strong research capabilities and 70 patents of Micro-Electric Vehicle. The company has stamping workshop, welding workshop, painting workshop, assembly workshop, that the four workshops of car production. The company also has a vehicle trial test base and a production base with 100000 annual output of Micro-Electric Vehicle.</p>
+            <p>The target markets of Yunwai are underdeveloped regions as Southeast Asia, Africa and Latin America. At this stage, our products have been exported to the United States, Vietnam, Thailand, Cambodia and other countries.</p>
+        </div>
+        <div class="map">
+            <img src="../img/about/map.png" alt="map">
+        </div>
+	</div>
+
+</body>
+</html>

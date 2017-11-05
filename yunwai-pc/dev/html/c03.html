@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" Content="电动车">
+    <meta name="author" Content="JamesXun">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>EcoGo</title>
+    <script>
+        // autoJump computeRem
+        (function () {
+            var isMobie = navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i);
+            if (isMobie) window.location.href = 'www.baidu.com';
+            var deviceWidth = document.documentElement.clientWidth;
+            document.documentElement.style.fontSize = deviceWidth / 19.2 + 'px';
+        }());
+    </script>
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style-index.css"/>
+<!--<link rel="stylesheet" href="http://wximg.gtimg.com/tmt/workflow-next/css/style-index.css"/>-->
+</head>
+
+<body>
+
+	<script>var currentPage = 4</script>
+	<div class="nav">
+    <div class="clearfix" id="nav-container">
+        <a class="logo" href="index.html"><img src="../../img/home/logo.png" alt=""></a>
+        <a class="page" href="index.html">HOME<i></i></a>
+        <a class="page" href="about.html">About Yunwai<i></i></a>
+        <a class="page" href="c02.html">C02<i></i></a>
+        <a class="page" href="c03.html">C03<i></i></a>
+        <a class="page" href="factory.html">Factory<i></i></a>
+        <a class="page" href="technology.html">Technology<i></i></a>
+        <a class="page" href="contact.html">Contact Us<i></i></a>
+    </div>
+</div>
+<script>
+    var aList = document.getElementById('nav-container').getElementsByTagName('a')
+    aList[currentPage].className += ' active'
+</script>
+
+
+	<div class="page-product c03" id="app">
+
+		<div class="banner">
+			<img src="../img/c03/banner.png" alt="banner" class="fullScreen">
+			<p>Long Mile Range<br>Light Weight Design</p>
+		</div>
+
+
+        <div class="main">
+            <h4 class="common-title">Choose Your Color</h4>
+			<div class="introduction">
+				<ul class="clearfix">
+	                <li>
+	                    <img src="../img/c03/color1.png" alt="color">
+	                    <p>Polar<br>White</p>
+	                </li>
+	                <li>
+	                    <img src="../img/c03/color2.png" alt="color">
+	                    <p>Cosmic<br>Silver</p>
+	                </li>
+	                <li>
+	                    <img src="../img/c03/color3.png" alt="color">
+	                    <p>Dream<br>Blue</p>
+	                </li>
+	                <li>
+	                    <img src="../img/c03/color4.png" alt="color">
+	                    <p>Crescent<br>Yellow</p>
+	                </li>
+	                <li>
+	                    <img src="../img/c03/color5.png" alt="color">
+	                    <p>Flame<br>Red</p>
+	                </li>
+	                <li>
+	                    <img src="../img/c03/color6.png" alt="color">
+	                    <p>Midnight<br>Black</p>
+	                </li>
+	            </ul>
+	            <img class="car" src="../img/c03/car.png" alt="c03">
+			</div>
+			<h4 class="common-title">Product Details</h4>
+			<ul class="parts clearfix">
+				<li>
+					<img src="../img/c03/part1.png" alt="part1">
+					<p>Fashion Design</p>
+				</li>
+				<li>
+					<img src="../img/c03/part2.png" alt="part2">
+					<p>Comfort Zone</p>
+				</li>
+				<li>
+					<img src="../img/c03/part3.png" alt="part3">
+					<p>Integrated LED Lamps</p>
+				</li>
+			</ul>
+			<h4 class="common-title last-title">Product Details</h4>
+			<img src="../img/c03/config.png" alt="" class="fullScreen">
+        </div>
+	</div>
+
+</body>
+</html>

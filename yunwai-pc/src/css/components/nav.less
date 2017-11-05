@@ -1,0 +1,42 @@
+.nav {
+    background: #333333;
+    height: .6rem;
+    >div {
+        width: 12rem;
+        margin: 0 auto;
+        a {
+            float: left;
+            margin: 0 .36rem;
+            display: block;
+            position: relative;
+            i {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: .04rem;
+                background: #EFB336;
+                display: none;
+            }
+            &:hover i {
+                display: block;
+            }
+        }
+        .active i {
+            display: block !important;
+        }
+        .logo {
+            img {
+                display: block;
+                margin-top: .13rem;
+                width: .8rem;
+            }
+        }
+        .page {
+            font-size: .2rem;
+            color: #FFFFFF;
+            letter-spacing: 0;
+            line-height: .6rem;
+        }
+    }
+}

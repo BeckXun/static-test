@@ -1,0 +1,38 @@
+<% include components/header.html %>
+<body>
+
+	<script>var currentPage = 5</script>
+	<% include components/nav.html %>
+
+	<div class="page-factory" id="app">
+
+        <img src="../img/technology/part2.png" alt="banner" class="fullScreen">
+
+		<div class="swiper-container swiper-container-horizontal">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="../img/technology/part2.png" alt=""></div>
+	            <div class="swiper-slide"><img src="../img/technology/part2.png" alt=""></div>
+	        </div>
+	        <!-- Add Pagination -->
+	        <div class="swiper-pagination"></div>
+	        <!-- Add Arrows -->
+	        <div class="swiper-button-next"></div>
+	        <div class="swiper-button-prev"></div>
+	    </div>
+
+	</div>
+
+    <% include components/footer.html %>
+	<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
+	<script>
+	    var swiper = new Swiper('.swiper-container', {
+	        pagination: '.swiper-pagination',
+	        paginationClickable: '.swiper-pagination',
+	        nextButton: '.swiper-button-next',
+	        prevButton: '.swiper-button-prev',
+	        spaceBetween: 30,
+			loop: true
+	    });
+    </script>
+</body>
+</html>

@@ -21,75 +21,75 @@
 </head>
 
 <body>
-
-	<script>var currentPage = 6</script>
+	<script>var currentClassName = 'nav-technology'</script>
 	<div class="nav">
-    <div class="clearfix" id="nav-container">
-        <a class="logo" href="index.html"><img src="../img/home/logo.png" alt=""></a>
-        <a class="page" href="index.html">HOME<i></i></a>
-        <a class="page" href="about.html">About Yunwai<i></i></a>
-        <a class="page" href="c02.html">C02<i></i></a>
-        <a class="page" href="c03.html">C03<i></i></a>
-        <a class="page" href="factory.html">Factory<i></i></a>
-        <a class="page" href="technology.html">Technology<i></i></a>
-        <a class="page" href="contact.html">Contact Us<i></i></a>
-    </div>
+	<div class="clearfix" id="nav-container">
+		<a class="logo" href="index.html"><img src="../img/home/logo.png" alt=""></a>
+		<a class="page nav-home" href="index.html">HOME<i></i></a>
+		<a class="page nav-about" href="about.html">About Yunwai<i></i></a>
+		<a class="page nav-solar" href="solar.html">Solar Lights<i></i></a>
+		<a class="page nav-c02" href="c02.html">C02<i></i></a>
+		<a class="page nav-c03" href="c03.html">C03<i></i></a>
+		<a class="page nav-factory" href="factory.html">Factory<i></i></a>
+		<a class="page nav-technology" href="technology.html">Technology<i></i></a>
+		<a class="page nav-contact" href="contact.html">Contact Us<i></i></a>
+	</div>
 </div>
 <script>
-    var aList = document.getElementById('nav-container').getElementsByTagName('a')
-    aList[currentPage].className += ' active'
+	var currentEle = document.getElementById('nav-container').getElementsByClassName(currentClassName)[0]
+	currentEle.className += ' active'
 </script>
 
 
 	<div class="page-technology" id="app">
 
-        <img src="https://s.chehejia.com/www/img/index/index9-big.jpeg?x-oss-process=image/format,jpg/interlace,1" alt="banner" class="fullScreen">
+		<img src="../img/technology/banner.jpg" class="fullScreen" alt="">
 
-        <div class="main">
-            <h4 class="common-title">Core Patents</h4>
-            <ul>
-                <li class="left">
-                    <img src="../img/technology/part1.png" alt="part">
-                    <h5>Powertrain</h5>
-                    <p>Motor efficiency is 96%</p>
-                    <p>Reduce weight by 50%</p>
-                    <p>Failure rate is lower than 60 PPM (Parts Per Million)</p>
-                </li>
-                <li class="right">
-                    <img src="../img/technology/part2.png" alt="part">
-                    <h5>Transmission</h5>
-                    <p>Transmission efficiency is 98%</p>
-                    <p>Noise is lower than 72dB</p>
-                    <p>Designed to last 300000km</p>
-                </li>
-                <li class="left">
-                    <img src="../img/technology/part3.png" alt="part">
-                    <h5>Electrical Control</h5>
-                    <p>100N·m max torque, strong power output</p>
-                    <p>Effectively reduce electricity consumption</p>
-                </li>
-                <li class="right">
-                    <img src="../img/technology/part4.png" alt="part">
-                    <h5>Lightweight Autobody</h5>
-                    <p>Lost 15% of weight and increase strength</p>
-                    <p>30% main performance boost (range and climbing capacity)</p>
-                    <p>Pass the crash test</p>
-                </li>
-                <li class="left">
-                    <img src="../img/technology/part5.png" alt="part">
-                    <h5>Trailing Arm Independent Suspension</h5>
-                    <p>Use new materials and new structures</p>
-                    <p>Greatly improve the comfort</p>
-                    <p>Lightweight design reduces weight by 12kg</p>
-                </li>
-                <li class="right">
-                    <img src="../img/technology/part6.png" alt="part">
-                    <h5>Five Link Suspension</h5>
-                    <p>Optimized efficiency of power system</p>
-                    <p>Great carrying capacity</p>
-                </li>
-            </ul>
-        </div>
+		<div class="main">
+			<h4 class="common-title">Core Patents</h4>
+			<ul>
+				<li class="left">
+					<img src="../img/technology/part1.png" alt="part">
+					<h5>Powertrain</h5>
+					<p>Motor efficiency is 96%</p>
+					<p>Reduce weight by 50%</p>
+					<p>Failure rate is lower than 60 PPM (Parts Per Million)</p>
+				</li>
+				<li class="right">
+					<img src="../img/technology/part2.png" alt="part">
+					<h5>Transmission</h5>
+					<p>Transmission efficiency is 98%</p>
+					<p>Noise is lower than 72dB</p>
+					<p>Designed to last 300000km</p>
+				</li>
+				<li class="left">
+					<img src="../img/technology/part3.png" alt="part">
+					<h5>Electrical Control</h5>
+					<p>100N·m max torque, strong power output</p>
+					<p>Effectively reduce electricity consumption</p>
+				</li>
+				<li class="right">
+					<img src="../img/technology/part4.png" alt="part">
+					<h5>Lightweight Autobody</h5>
+					<p>Lost 15% of weight and increase strength</p>
+					<p>30% main performance boost (range and climbing capacity)</p>
+					<p>Pass the crash test</p>
+				</li>
+				<li class="left">
+					<img src="../img/technology/part5.png" alt="part">
+					<h5>Trailing Arm Independent Suspension</h5>
+					<p>Use new materials and new structures</p>
+					<p>Greatly improve the comfort</p>
+					<p>Lightweight design reduces weight by 12kg</p>
+				</li>
+				<li class="right">
+					<img src="../img/technology/part6.png" alt="part">
+					<h5>Five Link Suspension</h5>
+					<p>Optimized efficiency of power system</p>
+					<p>Great carrying capacity</p>
+				</li>
+			</ul>
+		</div>
 
 		<div class="photos">
 			<img src="../img/technology/photos.png" alt="" class="fullScreen">
@@ -108,7 +108,7 @@
 		</div>
 	</div>
 
-    <div class="footer">
+	<div class="footer">
 	<img src="../img/home/logo.png" alt="logo" class="logo">
 	<div class="name">Beijing Yunwai Automobile Technology Co., Ltd.</div>
 	<div class="cont">

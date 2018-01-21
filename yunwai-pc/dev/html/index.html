@@ -21,23 +21,23 @@
 </head>
 
 <body>
-
-	<script>var currentPage = 1</script>
+	<script>var currentClassName = 'nav-home'</script>
 	<div class="nav">
-    <div class="clearfix" id="nav-container">
-        <a class="logo" href="index.html"><img src="../img/home/logo.png" alt=""></a>
-        <a class="page" href="index.html">HOME<i></i></a>
-        <a class="page" href="about.html">About Yunwai<i></i></a>
-        <a class="page" href="c02.html">C02<i></i></a>
-        <a class="page" href="c03.html">C03<i></i></a>
-        <a class="page" href="factory.html">Factory<i></i></a>
-        <a class="page" href="technology.html">Technology<i></i></a>
-        <a class="page" href="contact.html">Contact Us<i></i></a>
-    </div>
+	<div class="clearfix" id="nav-container">
+		<a class="logo" href="index.html"><img src="../img/home/logo.png" alt=""></a>
+		<a class="page nav-home" href="index.html">HOME<i></i></a>
+		<a class="page nav-about" href="about.html">About Yunwai<i></i></a>
+		<a class="page nav-solar" href="solar.html">Solar Lights<i></i></a>
+		<a class="page nav-c02" href="c02.html">C02<i></i></a>
+		<a class="page nav-c03" href="c03.html">C03<i></i></a>
+		<a class="page nav-factory" href="factory.html">Factory<i></i></a>
+		<a class="page nav-technology" href="technology.html">Technology<i></i></a>
+		<a class="page nav-contact" href="contact.html">Contact Us<i></i></a>
+	</div>
 </div>
 <script>
-    var aList = document.getElementById('nav-container').getElementsByTagName('a')
-    aList[currentPage].className += ' active'
+	var currentEle = document.getElementById('nav-container').getElementsByClassName(currentClassName)[0]
+	currentEle.className += ' active'
 </script>
 
 
@@ -55,7 +55,7 @@
 		</div>
 		<div class="section1">
 			<img src="../img/home/banner2.jpg" alt="" class="fullScreen">
-			<div class="center-container">50km生活半径，出行最优选择。</div>
+			<div class="center-container">Best choice for driving within a 50km life radius,<br>meets 80% needs in urban mobility.</div>
 		</div>
 
 		<ul class="section2">
@@ -66,14 +66,9 @@
 					<div class="center">
 						<div class="title">
 							<img src="../img/home/icon1.png" alt="icon">
-							<h4>低排放，占地小</h4>
+							<h4>Live green, drive green</h4>
 						</div>
-						<div class="text">和汽车相比
-							<br>生产和使⽤节能环保
-							<br>节约道路资源，低碳绿色出行
-							<br>从矿井到车轮的排放是k-car的1/3，
-							<br>是传统车的1/10，占地⾯面积是传统车的1/3。
-						</div>
+						<div class="text">All-electric, local emission-free, and with dynamic <br>acceleration.</div>
 					</div>
 				</div>
 			</li>
@@ -83,12 +78,9 @@
 				<div class="cont fr">
 					<div class="title" style="margin-top: 1.6rem;">
 						<img src="../img/home/icon1.png" alt="icon">
-						<h4>低能耗，低成本</h4>
+						<h4>Low cost, save your money</h4>
 					</div>
-					<div class="text">和电动车相比
-						<br>能耗、购⻋成本碳排放减少1/3
-						<br>充电方便，无需电网升级
-					</div>
+					<div class="text">Low purchase cost with extremely low driving cost per mile.<br>Only cost 5.54 kWh/100 km.</div>
 				</div>
 			</li>
 
@@ -97,11 +89,9 @@
 				<div class="cont fr">
 					<div class="title" style="margin-top: 1.6rem;">
 						<img src="../img/home/icon3.png" alt="icon">
-						<h4>乘坐舒适，安全便利</h4>
+						<h4>The perfect city car</h4>
 					</div>
-					<div class="text">和摩托车相比
-						<br>舒适性、安全性、便利和效率大幅提升。
-						<br>载客能力提升3-5倍。
+					<div class="text">With the perfect drive for the city: easy to use, easy to <br>park and with unique driving enjoyment and sufficient <br>range for all your daily trips.
 					</div>
 				</div>
 			</li>
@@ -111,31 +101,25 @@
 				<div class="cont fr">
 					<div class="title" style="margin-top: 1.52rem;">
 						<img src="../img/home/icon4.png" alt="icon">
-						<h4>充电短，里程长</h4>
+						<h4>Easy to charge</h4>
 					</div>
-					<div class="text">和微电车相比
-						<br>充电更短（6个小时），里程更远150km）
-						<br>性价比行业标杆20%以上
-						<br>价格3-5万，关键部件500ppm以下，98%以上良品率
-					</div>
+					<div class="text">You can charge your vehicle almost everywhere.<br>No special charging station required.<br>Fully charging the vehicle in 8 hours with a range of up to 150 km.</div>
 				</div>
 			</li>
 
 		</ul>
 
 		<div class="common-section">
-			<img class="fullScreen" src="https://s.chehejia.com/www/img/index/index7-big-10-20.jpg?x-oss-process=image/format,jpg/interlace,1" alt="">
-			<h3>云外研发中心</h3>
-			<p>第一基地与第二基地总占地面积100万平方米，设计产能30万辆。
-				<br>拥有领先的冲压、焊接、涂装和总装四大工艺，将实现高度自动化、高品质与节能环保的生产制造。
+			<img class="fullScreen" src="../img/home/banner3.jpg" alt="">
+			<h3>Yunwai Research Center</h3>
+			<p>
+				Yunwai is the National High Technology Enterprise in China with 6 core technologies and 70 patents of Micro-<br>Electric Vehicle. Independent research and development through the entire process of modeling design, <br>engineering design, engineering trial and engineering test.
 			</p>
 		</div>
 		<div class="common-section">
-			<img class="fullScreen" src="https://s.chehejia.com/www/img/index/index7-big-10-20.jpg?x-oss-process=image/format,jpg/interlace,1" alt="">
-			<h3>云动力智能汽车制造基地</h3>
-			<p>第一基地与第二基地总占地面积100万平方米，设计产能30万辆。
-				<br>拥有领先的冲压、焊接、涂装和总装四大工艺，将实现高度自动化、高品质与节能环保的生产制造。
-			</p>
+			<img class="fullScreen" src="../img/home/banner4.jpg" alt="">
+			<h3>Yunwai Micro Electric Vehicle Manufacturing Base</h3>
+			<p>Yunwai Micro Electric Vehicle Manufacturing Base has 100,000 units capacity with industry leading <br>manufacturing capability of stamping, welding, painting and assembly.<br>High automation, high quality and environmental friendly.</p>
 		</div>
 
 

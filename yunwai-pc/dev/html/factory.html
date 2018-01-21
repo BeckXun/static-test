@@ -21,53 +21,41 @@
 </head>
 
 <body>
-
-	<script>var currentPage = 5</script>
+	<script>var currentClassName = 'nav-factory'</script>
 	<div class="nav">
-    <div class="clearfix" id="nav-container">
-        <a class="logo" href="index.html"><img src="../img/home/logo.png" alt=""></a>
-        <a class="page" href="index.html">HOME<i></i></a>
-        <a class="page" href="about.html">About Yunwai<i></i></a>
-        <a class="page" href="c02.html">C02<i></i></a>
-        <a class="page" href="c03.html">C03<i></i></a>
-        <a class="page" href="factory.html">Factory<i></i></a>
-        <a class="page" href="technology.html">Technology<i></i></a>
-        <a class="page" href="contact.html">Contact Us<i></i></a>
-    </div>
+	<div class="clearfix" id="nav-container">
+		<a class="logo" href="index.html"><img src="../img/home/logo.png" alt=""></a>
+		<a class="page nav-home" href="index.html">HOME<i></i></a>
+		<a class="page nav-about" href="about.html">About Yunwai<i></i></a>
+		<a class="page nav-solar" href="solar.html">Solar Lights<i></i></a>
+		<a class="page nav-c02" href="c02.html">C02<i></i></a>
+		<a class="page nav-c03" href="c03.html">C03<i></i></a>
+		<a class="page nav-factory" href="factory.html">Factory<i></i></a>
+		<a class="page nav-technology" href="technology.html">Technology<i></i></a>
+		<a class="page nav-contact" href="contact.html">Contact Us<i></i></a>
+	</div>
 </div>
 <script>
-    var aList = document.getElementById('nav-container').getElementsByTagName('a')
-    aList[currentPage].className += ' active'
+	var currentEle = document.getElementById('nav-container').getElementsByClassName(currentClassName)[0]
+	currentEle.className += ' active'
 </script>
 
 
 	<div class="page-factory" id="app">
 
-        <img src="https://s.chehejia.com/www/img/index/index5-big-10-20.jpg?x-oss-process=image/format,jpg/interlace,1" alt="banner" class="fullScreen">
-
 		<div class="common-section">
-			<img class="fullScreen" src="https://s.chehejia.com/www/img/index/index7-big-10-20.jpg?x-oss-process=image/format,jpg/interlace,1" alt="">
-			<h3>云动力智能汽车制造基地</h3>
-			<p>第一基地与第二基地总占地面积100万平方米，设计产能30万辆。
-				<br>拥有领先的冲压、焊接、涂装和总装四大工艺，将实现高度自动化、高品质与节能环保的生产制造。
-			</p>
+			<img src="../img/factory/banner1.jpg" class="fullScreen" alt="">
+			<h3>Yunwai Micro Electric Vehicle Manufacturing Base</h3>
+			<p>Yunwai Micro Electric Vehicle Manufacturing Base has 100,000 units capacity with industry leading manufacturing capability of stamping, welding, painting and assembly.<br>High automation, high quality and environmental friendly.</p>
 		</div>
 
-		<div class="swiper-container swiper-container-horizontal">
-	        <div class="swiper-wrapper">
-	            <div class="swiper-slide"><img src="https://s.chehejia.com/www/img/index/index6-big-10-20.jpg?x-oss-process=image/format,jpg/interlace,1" alt=""></div>
-	            <div class="swiper-slide"><img src="https://s.chehejia.com/www/img/index/index6-big-10-20.jpg?x-oss-process=image/format,jpg/interlace,1" alt=""></div>
-	        </div>
-	        <!-- Add Pagination -->
-	        <div class="swiper-pagination"></div>
-	        <!-- Add Arrows -->
-	        <div class="swiper-button-next"></div>
-	        <div class="swiper-button-prev"></div>
-	    </div>
+		<img src="../img/factory/banner2.jpg" class="fullScreen" alt="">
+		<img src="../img/factory/banner3.jpg" class="fullScreen" alt="">
+		<img src="../img/factory/banner4.jpg" class="fullScreen" alt="">
 
 	</div>
 
-    <div class="footer">
+	<div class="footer">
 	<img src="../img/home/logo.png" alt="logo" class="logo">
 	<div class="name">Beijing Yunwai Automobile Technology Co., Ltd.</div>
 	<div class="cont">
@@ -96,16 +84,6 @@
 	</div>
 </div>
 
-	<script src="https://cdn.bootcss.com/Swiper/3.4.2/js/swiper.min.js"></script>
-	<script>
-	    var swiper = new Swiper('.swiper-container', {
-	        pagination: '.swiper-pagination',
-	        paginationClickable: '.swiper-pagination',
-	        nextButton: '.swiper-button-next',
-	        prevButton: '.swiper-button-prev',
-	        spaceBetween: 30,
-			loop: true
-	    });
-    </script>
+
 </body>
 </html>

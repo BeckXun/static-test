@@ -22,22 +22,23 @@
 
 <body>
 
-	<script>var currentPage = 3</script>
+	<script>var currentClassName = 'nav-c02'</script>
 	<div class="nav">
-    <div class="clearfix" id="nav-container">
-        <a class="logo" href="index.html"><img src="../img/home/logo.png" alt=""></a>
-        <a class="page" href="index.html">HOME<i></i></a>
-        <a class="page" href="about.html">About Yunwai<i></i></a>
-        <a class="page" href="c02.html">C02<i></i></a>
-        <a class="page" href="c03.html">C03<i></i></a>
-        <a class="page" href="factory.html">Factory<i></i></a>
-        <a class="page" href="technology.html">Technology<i></i></a>
-        <a class="page" href="contact.html">Contact Us<i></i></a>
-    </div>
+	<div class="clearfix" id="nav-container">
+		<a class="logo" href="index.html"><img src="../img/home/logo.png" alt=""></a>
+		<a class="page nav-home" href="index.html">HOME<i></i></a>
+		<a class="page nav-about" href="about.html">About Yunwai<i></i></a>
+		<a class="page nav-solar" href="solar.html">Solar Lights<i></i></a>
+		<a class="page nav-c02" href="c02.html">C02<i></i></a>
+		<a class="page nav-c03" href="c03.html">C03<i></i></a>
+		<a class="page nav-factory" href="factory.html">Factory<i></i></a>
+		<a class="page nav-technology" href="technology.html">Technology<i></i></a>
+		<a class="page nav-contact" href="contact.html">Contact Us<i></i></a>
+	</div>
 </div>
 <script>
-    var aList = document.getElementById('nav-container').getElementsByTagName('a')
-    aList[currentPage].className += ' active'
+	var currentEle = document.getElementById('nav-container').getElementsByClassName(currentClassName)[0]
+	currentEle.className += ' active'
 </script>
 
 
@@ -49,41 +50,41 @@
 		</div>
 
 
-        <div class="main">
-            <h4 class="common-title">Choose Your Color</h4>
+		<div class="main">
+			<h4 class="common-title">Choose Your Color</h4>
 			<div class="introduction">
 				<ul class="clearfix">
-	                <li>
-	                    <img src="../img/c02/color1.png" alt="color">
-	                    <p>Polar<br>White</p>
-	                </li>
-	                <li></li>
-	                <li>
-	                    <img src="../img/c02/color2.png" alt="color">
-	                    <p>Cosmic<br>Silver</p>
-	                </li>
-	                <li>
-	                    <img src="../img/c02/color3.png" alt="color">
-	                    <p>Dream<br>Blue</p>
-	                </li>
-	                <li>
-	                    <img src="../img/c02/color4.png" alt="color">
-	                    <p>Crescent<br>Yellow</p>
-	                </li>
-	                <li>
-	                    <img src="../img/c02/color5.png" alt="color">
-	                    <p>Flame<br>Red</p>
-	                </li>
-	                <li>
-	                    <img src="../img/c02/color6.png" alt="color">
-	                    <p>Midnight<br>Black</p>
-	                </li>
-	                <li>
-	                    <img src="../img/c02/color7.png" alt="color">
-	                    <p>Champagne<br>Gold</p>
-	                </li>
-	            </ul>
-	            <img class="car" src="../img/c02/car.png" alt="c02">
+					<li>
+						<img src="../img/c02/color1.png" alt="color">
+						<p>Polar<br>White</p>
+					</li>
+					<li></li>
+					<li>
+						<img src="../img/c02/color2.png" alt="color">
+						<p>Cosmic<br>Silver</p>
+					</li>
+					<li>
+						<img src="../img/c02/color3.png" alt="color">
+						<p>Dream<br>Blue</p>
+					</li>
+					<li>
+						<img src="../img/c02/color4.png" alt="color">
+						<p>Crescent<br>Yellow</p>
+					</li>
+					<li>
+						<img src="../img/c02/color5.png" alt="color">
+						<p>Flame<br>Red</p>
+					</li>
+					<li>
+						<img src="../img/c02/color6.png" alt="color">
+						<p>Midnight<br>Black</p>
+					</li>
+					<li>
+						<img src="../img/c02/color7.png" alt="color">
+						<p>Champagne<br>Gold</p>
+					</li>
+				</ul>
+				<img class="car" src="../img/c02/car.png" alt="c02">
 			</div>
 			<h4 class="common-title">Product Details</h4>
 			<ul class="parts clearfix">
@@ -102,7 +103,7 @@
 			</ul>
 			<h4 class="common-title last-title">Product Details</h4>
 			<img src="../img/c02/config.png" alt="" class="fullScreen">
-        </div>
+		</div>
 	</div>
 
 </body>

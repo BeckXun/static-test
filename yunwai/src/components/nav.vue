@@ -30,11 +30,11 @@ export default {
 		  router: '/about'
 		},
 		{
-		  text: 'c02',
+		  text: 'C02',
 		  router: '/c02'
 		},
 		{
-		  text: 'c03',
+		  text: 'C03',
 		  router: '/c03'
 		},
 		{

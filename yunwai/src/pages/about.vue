@@ -2,7 +2,7 @@
 	<div class="main">
 		<my-nav></my-nav>
 		<img class="logo" src="../assets/about/logo.png" alt="logo">
-		<div class="title">Beijing Yunwai Automobile Technology Co., Ltd.</div>
+		<!-- <div class="title">Beijing Yunwai Automobile Technology Co., Ltd.</div> -->
 		<p class="article" v-for="text in list">{{text}}</p>
 		<img class="banner" src="../assets/about/map.png" alt="map">
 	</div>
@@ -17,9 +17,9 @@ export default {
 	data () {
 		return {
 			list: [
-				'Beijing Yunwai Automobile Technology Co., Ltd. is a specialized high-tech enterprise that develops, manufactures and sells micro-electric vehicle. The company also provides technical and after-sales service, and has a professional marketing team with strong resources in domestic and international markets.',
-				'Yunwai is the National High Technology Enterprise in China with strong research capabilities and 70 patents of Micro-Electric Vehicle. The company has stamping workshop, welding workshop, painting workshop, assembly workshop, that the four workshops of car production. The company also has a vehicle trial test base and a production base with 100000 annual output of Micro-Electric Vehicle.',
-				'The target markets of Yunwai are underdeveloped regions as Southeast Asia, Africa and Latin America. At this stage, our products have been exported to the United States, Vietnam, Thailand, Cambodia and other countries.',
+		'Beijing Yunwai Automobile Technology is an energy company of "step utilization of energy recycling and energy products", featured with a vertical integration in R&D, manufacture and sales of micro electric vehicles, electric tricycles, solar lights, recycling of Class A batteries and distributed accumulation equipment, and new energy products. The company provides technical and after-sales services, and has a professional marketing group and powerful domestic and foreign market resources.',
+		`Yunwai has outstanding capacities in forward research and development of micro electric vehicles, electric tricycles, solar lights and the core components, with more than 70 patents. The company has industry leading manufacturing capability of stamping, welding, painting and assembly, which enables independent manufacturing and production in relation to most of the company's products and an annual production capacity of 100,000 micro electric vehicles.`,
+		`Yunwai's target markets include China, South-East Asia, South America, and other less development overseas regions. The company's products have been exported to the US, South Africa, Vietnam, Thailand, Cambodia, etc., and certain products have won 30% market share in South-East Asia and Africa.`,
 			]
 		};
 	}
@@ -31,7 +31,7 @@ export default {
 	.logo {
 		display: block;
 		width: .8rem;
-		margin: .2rem auto 0;
+		margin: .32rem auto .07rem;
 	}
 	.title {
 		text-align: center;
@@ -40,20 +40,17 @@ export default {
 		margin-top: -0.1rem;
 	}
 	.article {
-		margin-top: .24rem;
+		margin-bottom: .24rem;
 		padding: 0 0.2rem;
 		font-size: .14rem;
-		line-height: .18rem;
+		line-height: .21rem;
 	}
 	p:last-of-type {
-		margin-bottom: .12rem;
+		margin-bottom: .2rem;
 	}
 }
-// <div class="main">
-// 		<my-nav></my-nav>
-// 		<img class="logo" src="../assets/about/logo.png" alt="logo">
-// 		<div class="title">Beijing Yunwai Automobile Technology Co., Ltd.</div>
-// 		<p class="article" v-for="text in list">{{text}}</p>
-// 		<img src="../assets/about/map.png" alt="map">
-// 	</div>
+.banner {
+  width: 3.35rem;
+  margin: 0 auto;
+}
 </style>

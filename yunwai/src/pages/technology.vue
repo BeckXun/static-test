@@ -3,7 +3,7 @@
 
 		<my-nav></my-nav>
 
-		<img src="" alt="" class="banner">
+		<img src="../assets/technology/banner.jpg" alt="" class="banner">
 
 		<ul>
 			<li v-for="(data, index) in list">

@@ -1,5 +1,5 @@
 <template>
-  <h3>{{text}}</h3>
+  <h3 v-html="text"></h3>
 </template>
 
 <script>
@@ -15,7 +15,7 @@ export default {
 h3 {
 	padding-left: .08rem;
 	font-size: .18rem;
-	height: .25rem;
+  font-weight: bold;
 	line-height: .25rem;
 	position: relative;
 	&::before {

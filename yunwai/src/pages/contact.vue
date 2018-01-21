@@ -1,7 +1,7 @@
 <template>
 	<div class="main" @touchmove.stop.prevent>
 		<my-nav></my-nav>
-		<div class="header">
+		<div class="header" :style="background">
 			<img src="../assets/logo.png" alt="logo">
 			<p>Beijing Yunwai Automobile Technology Co., Ltd.</p>
 		</div>
@@ -23,6 +23,9 @@ export default {
 	},
 	data () {
 		return {
+			background: {
+				backgroundImage: `url(${require('../assets/contact/bg.png')})`
+			},
 			list: [
 				{
 					icon: require('../assets/contact/phone.png'),
@@ -55,7 +58,6 @@ export default {
 	height: 100%;
 	overflow: hidden;
 	.header {
-		background: url(../assets/contact/bg.png);
 		background-size: 100% 100%;
 		padding: .89rem 0 .6rem;
 		img {
